@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <title>Showroom</title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+body { 
+  margin: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  mix-blend-mode: overlay;
+}
+#navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.511);
+  transition: 0.4s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+#navbar 
+img {
+  border-radius: 4px;
+  padding: 5px;
+  width: 55px;
+  height:  60px;
+}
+
+#navbar a {
+  float: left;
+  color: rgb(251, 245, 245);
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+   color: black;
+}
+
+#navbar a.active {
+    color: black;
+}
+
+#navbar-right {
+    float: right;
+}
+
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+
+}
+.containerMap {
+    margin-top: 110px;
+    width: 100%; 
+    height: 800px; 
+
+}
+
+.text h1
+    {
+        top: 10px;  
+        font-size: 85px;
+        color: white; 
+        left: 350px; 
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .container
+    {
+        align-items: center;
+        max-width:100%; 
+        background: rgba(0, 0, 0, 0.8);  
+        height: 320px; 
+    }
+    .img-with-text 
+    {
+        margin: 17px; 
+        border: 0px; 
+        position:relative;
+        float:left; 
+        width: 330px;
+    }
+
+    .img-with-text img {
+        width: 100%;
+        height: auto; 
+
+    }
+    .desc {
+        padding:15px; 
+        text-align: center;
+    }
+    .desc p2
+    {
+        font-size: 25px;
+        color: white; 
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    height:580px; 
+    width:100%; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+    color:white;
+}
+
+.footer1{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.social {
+    background-color: rgba(0, 0, 0, 0);
+    display:flex;
+    font-size: 50px;
+}
+.footer-bottom 
+{
+    align-items: center;
+}
+.infor {
+    
+    padding-left: 150px; 
+}
+    
+</style>
+
+
+<body>
+
+
+    <div id="navbar">
+        <a href="hw.html" id="logo"><img src="24356.png">Bikes</a>
+        
+        <div id="navbar-right">
+          <a  href="hw.html">Home</a>
+          <a href="aboutus.html">About us</a>
+          <a href="bikes.html">Bikes</a>
+          <a class="active" href="showroom.html">Showroom</a>
+         
+          <a href="Sign-in.html"><i class="fa fa-fw fa-sign-in"></i> Sign in</a></div>
+          
+          <a></a>
+        </div>
+       
+    </div>
+    <div class = "containerMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231434.04658538563!2d121.25638651368699!3d24.994781366644816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa31c4997d87%3A0xd39ae8ce58bf05a6!2z5L-d5pmC5o23IOaVpuWNl-WxleekuuS4reW_gw!5e0!3m2!1svi!2stw!4v1672918970746!5m2!1svi!2stw" 
+        width= "100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+
+<div class ="container">
+    <div class = "img-with-text" > 
+        <img src="porsche-preview (2).webp" alt="showroom1" class ="imageChange" >
+    </ul>
+        <div class = "desc">
+            <p2>Showroom 1</p2>
+        </div>
+    </div>
+
+    <div class = "img-with-text" > 
+        <img src= "porsche-preview (1).webp" alt="showroom2"  class ="imageChange" > 
+    </ul>
+        <div class = "desc">
+            <p2>Showroom 2</p2>
+        </div>
+    </div>
+    <div class = "img-with-text" > 
+        <img src= "porsche-preview.webp" alt="showroom3"  class ="imageChange" > 
+    </ul>
+        <div class = "desc">
+            <p2>Showroom 3</p2>
+        </div>
+    </div>
+    <div class = "img-with-text" > 
+        <img src= "porsche-preview (4).webp" alt="showroom4"  class ="imageChange" > 
+    </ul>
+        <div class = "desc">
+            <p2>Showroom 4</p2>
+        </div>
+    </div>
+    
+</div>
+
+    <footer>
+        <div class = "infor">
+            <h1>Contact Infor:</h1>
+            <p><i class = "fa fa- fa-street-view"></i><li> Showroom 1: 106台北市大安區基隆路二段238號</li> <li> Showroom 2: 306台北市大安區基隆路二段238號</li> <li> Showroom 3: 506台北市大安區基隆路二段238號</li></p>
+            <p><i class = "fa fa- fa-phone"> </i>  Phone: 0227383677 </p>
+            <p><i class = "fa fa- fa-clock-o"></i> Open time: 09:00–21:00</p>     
+            
+        </div>
+        
+        
+        <div class="footer1">
+            <ul class = "social">
+                <a href ="#"><i class = "fa fa-facebook" style="font-size:40px;color:rgb(250, 251, 253);"></i></a>  <p>&nbsp</p>
+                <a href ="#"><i class = "fa fa-youtube" style="font-size:40px;color:rgb(250, 251, 253);"></i></a> <p>&nbsp</p>
+               <a href ="#"> <i class = "fa fa-twitter"style="font-size:40px;color:rgb(250, 251, 253);"></i></a> <p>&nbsp</p>
+            
+            </ul>
+            <div class ="footer - Bottom">
+                <p>copyright &copy 2022</p>
+          
+            </div>
+           
+        </div>
+    </footer>
+</body>
+</html>
